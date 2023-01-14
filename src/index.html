@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="main.css" rel="stylesheet" />
+    </head>
+    <body>
+        <script src="./index.js"></script>
+        <h1>Tic tac toe</h1>
+        <main>
+            <div id="container" class="container">
+                <div class="grow">
+                    <div class="row">
+                        <div id="1" class ="cell" name="celdas"></div>
+                        <div id="2" class="cell"name="celdas"></div>
+                        <div id="3" class="cell"name="celdas"></div>
+                    </div>
+                    <div class="row">
+                        <div id="4" class="cell"name="celdas"></div>
+                        <div id="5" class="cell" name="celdas"></div>
+                        <div id="6" class="cell"name="celdas"></div>
+                    </div>
+                    <div class="row">
+                        <div id="7" class="cell"name="celdas"></div>
+                        <div id="8" class="cell" name="celdas"></div>
+                        <div id="9" class="cell" name="celdas"></div>
+                    </div>
+                </div>
+                <div class="main__information">
+                    <div>
+                        <div>Turno</div>
+                        <div id="players" class="turn-cell-x"></div>
+                        
+                    </div>
+                    <div>
+                        <div>Movements</div>
+                        <table >
+                            <thead>
+                                <tr>
+                                    <td>Orden</td>
+                                    <td>Casilla</td>
+                                    <td>Tipo</td>
+                                </tr>
+                            </thead>
+                            <tbody id="movement"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div id="result"></div>
+        <div style="display:flex;justify-content:center">
+            <button id="restart"value="Reiniciar" onclick="restart()">New game</button>
+        </div>
+    </body>
+</html>
